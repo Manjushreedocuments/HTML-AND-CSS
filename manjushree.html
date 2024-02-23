@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+        }
+        
+        
+        .flex{
+            display: flex;
+        }
+        
+        .sec1{
+            background-image: "";
+        }
+        .contact>p{
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            margin-bottom: 100px;
+        }
+        
+        i{
+            margin: 5px;
+        }
+        
+        .contact{
+            margin-top:200px ;
+            transform: rotate(270deg);
+        }
+        
+        
+        
+        #grid-container{
+            height: 100vh;
+            width: 100%;
+            background-color: grey;
+            display: grid;
+            grid-template-areas: "header header header header"
+                                 "article article section section"
+                                 "article article section section"
+                                
+                                 
+        }
+        #grid-items1{
+            background-color: rgb(58, 57, 57);
+            grid-area: header ;
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        #grid-items2{
+            background-color: rgb(58, 57, 57);
+            grid-area: article ;
+            
+        }
+        #grid-items3{
+            background-color: rgb(58, 57, 57);
+            grid-area: section ;
+            line-height: 40px;
+        }
+        .grid-items{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+           color: white;
+           font-family:sans-serif ;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+        }
+        ul>li{
+        border-radius: 50px;
+        border: 1px solid white;
+        width: 1vw;
+        height: 2vh;
+        display: flex;
+        margin: 8px;
+        }
+        #color1{
+        background-color: red;
+        }
+        #color2{
+        background-color: blue;
+        }
+        #color3{
+        background-color: yellow;
+        }
+        #color4{
+        background-color: purple;
+        }
+        #color5{
+        background-color: magenta;
+        }
+        #color{
+        position: absolute;
+        left: 77vw;
+        top: 145vh;
+        }
+        li{
+        list-style: none;
+        font-weight: bolder;
+        }
+        
+        
+        #demo{
+            display: flex;
+            justify-content: space-around;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: 500px 500px 500px;
+        }
+        main{
+            position: absolute;
+            top: 60vh;
+            left: 20vw;
+        }
+        #grid-container1{
+            display: grid;
+            position: relative;
+            left: 300px;
+            line-height: 15px;
+            grid-template-columns: 300px 300px 300px;
+        }
+        
+        
+        input{
+            padding: 10px 20px ;
+            background-color: black;
+           
+            border: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.714);
+            width: 30%;
+        
+         
+        
+        
+        
+        }
+        
+        #demo{
+            display: flex;
+            justify-content: space-around;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: 500px 500px 500px;
+        }
+        main{
+            position: absolute;
+            top: 60vh;
+            left: 20vw;
+        }
+        #grid-container1{
+            display: grid;
+            position: relative;
+            left: 300px;
+            line-height: 15px;
+            grid-template-columns: 300px 300px 300px;
+        }
+        
+        
+        input{
+            padding: 10px 20px ;
+            background-color: black;
+           
+            border: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.714);
+            width: 30%;
+        
+         
+        
+        
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="conntainer">
+        <div class="sec1 flex" style="background-color: #ffffff;">
+            <div class="contact flex " style=" background-color: gray ; height: 50px; width:100vh; position: absolute; left: -230px; top: 50px;">
+                <p style="display: inline-block; ">
+                    <hr style="height: 3px; width: 100px; background-color: white; margin-top: 15px ;">
+                    <i><pre>   Follow us    </pre></i>
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-pinterest" style="color: #ffffff;"></i> 
+
+                </p>
+            </div>
+            <div class="flex" style="flex-direction: column; width: 40vw; height: 100vh; justify-content: center; align-items: start;">
+                
+                <div style="position: absolute; left: 100px; width: 50vw;">
+                    <div style="position: absolute; top: -180px;">SIGNATURE</div>
+                    <h1>Highest quality wireless headphones</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dolorem pariatur quas unde assumenda ad porro, iste itaque veritatis dignissimos reprehenderit quibusdam ex odit quia eius tempore libero laborum! Iste?</p>
+                    <h2>$500* |Buy Now</h2>
+                </div>
+                <div></div>
+            </div>
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_1280.jpg" alt="" style="width: 450px; height: 450px;position:absolute;top:50px ;left: 60vw;">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="grid-container">
+        <div id="grid-items1" class="grid-items">
+            <p>VIEW SPECIFICATION</p>
+            <h1>Solo Beat Specification</h1>
+        </div>
+        <div id="grid-items2" class="grid-items">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/09/08/headphones-1868612_1280.jpg" alt="" height="400vh" width="550vw">
+        </div>
+        <div id="grid-items3" class="grid-items">
+            <ol>
+                <li>Name : Solo AB12HB</li>
+                <li>Weight : 230g</li>
+                <li>Height : 72cm</li>
+                
+                <li>Available Color : <ul id="color">
+                    <li id="color1"></li>
+                    <li id="color2"></li>
+                    <li id="color3"></li>
+                    <li id="color4"></li>
+                    <li id="color5"></li>
+                </ul></li>
+                
+                <li>Type : Wireless/Bluetooth</li>
+                <li>Battery Life : 2 hours</li>
+                <li>Battery : 100 mAh</li>
+                <li>Dimensions : 21x4x27 cm</li>
+                <li>Connectors : Micro-USB (Battery Charge)</li>
+                <li>Operating Distance : 5 Meter</li>
+            </ol>
+        </div>
+    </div>
+
+
+    <!-- Codeshare logo
+ ShareSign UpLog In -->
+1
+
+<article style="position: absolute; top:200vh; ">
+    
+    <div id="demo">
+        <h1>Design and built with latest treanding future technology</h1>
+        <button style="padding: 0px 50px ;height: 50px;position: absolute;top: 25px;right: 100px;">see all futures</button>
+    </div>
+
+    <div id="container">
+        <div id="Grid-item1">
+            <h5>Wireless connection</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae iste commodi eos sed exercitationem soluta cumque aspernatur, officia non!</p>
+            <h5>Learn More-></h5>
+
+        </div>
+        <div id="Grid-item2">
+            <h5>Qualitative sound</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae iste commodi eos sed exercitationem soluta cumque aspernatur, officia non!</p>
+            <h5>Learn More-></h5>
+
+        </div>
+        <div id="Grid-item3">
+            <h5>Beautiful and Modern Design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae iste commodi eos sed exercitationem soluta cumque aspernatur, officia non!</p>
+            <h5>Learn More-></h5>
+
+        </div>
+        <div id="Grid-item4">
+            <h5>High-end Sound</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae iste commodi eos sed exercitationem soluta cumque aspernatur, officia non!</p>
+            <h5>Learn More-></h5>
+        </div>
+        <div id="grid-item5">
+            <h5>bluetooth</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae iste commodi eos sed exercitationem soluta cumque aspernatur, officia non!</p>
+            <h5>Learn More-></h5>
+        </div>
+        <div id="Grid-item6">
+            <h5>waterproof & Dust Tight </h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae iste commodi eos sed exercitationem soluta cumque aspernatur, officia non!</p>
+            <h5>Learn More-></h5>
+        </div>
+    </div>
+
+
+    <main>
+        <h1 style="font-size: 50px;position: relative;left: 100px;bottom:100px">Exchange with your old one<br> <h1 style="position: relative;left: 170px; font-size: 50px;bottom: 100px;">get 20% flat discount</h1> </h1>
+        <p style="position: relative;right: 200px;bottom: 50px;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit quo atque repellendus enim iste, veniam eius earum! Qui autem non rerum, quibusdam porro assumenda, provident debitis reiciendis dolores quidem eius Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto expedita esse velit voluptatem, illo tempore iste unde nihil corrupti aliquid eligendi veniam! Tempora maxime vel recusandae illum quidem accusamus enim neque, culpa nesciunt assumenda minima quod earum excepturi esse ducimus cum iste molestias eaque aspernatur <span style="text-align-last: center;">facilis nulla magnam est quo. Corrupti saepe soluta alias veritatis eum atque inventore et suscipit ipsam architecto ex beatae, modi sequi officia ipsum, impedit minima?</span> 
+        </p>
+        <button style="position: absolute;top: 270px;left: 300px;padding: 10px 80px;background-color: black;color: white;">BUT NOW</button>
+    </main>
+
+    <section style="position: absolute;top: 800px;left: 10px; line-height: 50px;background-color: black;color: white;width: 100%;">
+        <p style="text-align: center;">contact us</p>
+        <h1 style="text-align: center;font-size: 50px;">Any question? Send Us Message</h1>
+        <div style="display: flex;justify-content: space-between; width: 50%;position: relative;left: 350px;">
+            <input type="text"placeholder="enter your name" >
+            <input type="text" placeholder="your email-address">
+        </div>
+        <div style="position: relative;left: 350px">
+            <input type="text" placeholder="subject">
+        </div>
+        <div style="position: relative;left: 350px">
+            <input type="text" placeholder="How can i help you" >
+        </div>
+        <button style="padding: 5px 60px;position: relative;left: 650px;background-color: black;color: white;border: 1px solid white;">Submit</button>
+        <div id="grid-container1">
+            <div id="grid-itema">
+            <h4>copywrites@2023</h4>
+            <h5>clean boats bt awken</h5>
+            </div>
+            <div id="grid-itemb">
+              <h4>contact</h4>
+ <h5>cleansheet inc</h5>
+ <h5>ABC Apt</h5>
+ <h5>sandy ut 84091-1547</h5>
+            </div>
+            <div id="grid-itemc">
+            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, sapiente.s</h4>
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-pinterest" style="color: #ffffff;"></i> 
+            </div>
+        </div>
+    </section>
+</article>
+
+  
+</body>
+</html>
